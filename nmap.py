@@ -7,4 +7,3 @@ def get_nmap(options, ip):
     return result
 
 
-print(get_nmap("-F","216.58.203.174"))

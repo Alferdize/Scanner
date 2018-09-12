@@ -1,9 +1,9 @@
 from tld import get_tld 
-
+import tldextract
 
 def get_domain_name(url):
-    print(url)
-    domain_name = get_tld(url)
-    return domain_name
+    spltAr = url.split("://www.");
+    i = (0,1)[len(spltAr)>1];
+    dm = spltAr[i].split("?")[0].split('/')[0].split(':')[0].lower();
+    return dm
 
-print(get_domain_name('https://www.youtube/'))
