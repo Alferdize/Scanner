@@ -1,4 +1,5 @@
 # Scanner
+<<<<<<< HEAD
 
 Overview
 ========
@@ -19,3 +20,6 @@ Requirements
 * it from here https://nmap.org/download.html
 
 
+=======
+This is scanner program in which you  can pass url of any find out the output of command like whois, namp, hostname, etc
+>>>>>>> deccb2e8911de2a5caf34afc2c79e505b66eb55b
