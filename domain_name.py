@@ -1,4 +1,3 @@
-from tld import get_tld 
 import tldextract
 
 def get_domain_name(url):
