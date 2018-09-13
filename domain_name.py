@@ -1,4 +1,3 @@
-import tldextract
 
 def get_domain_name(url):
     spltAr = url.split("://www.");

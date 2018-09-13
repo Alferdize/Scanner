@@ -4,7 +4,7 @@ from ip_address import *
 from nmap import *
 from robots_txt import *
 from whois import *
-
+import tldextract
 
 ROOT_DIR = 'companies'
 create_dir(ROOT_DIR)
@@ -28,7 +28,13 @@ def create_reports(name, full_url, domain_name, nmap, robots_txt, whois):
     write_file(project_dir + '\\robots_txt.txt', robots_txt)
     write_file(project_dir + '\\whois.txt', whois)
 
-    
-gather_info('google','https://www.google.com/')
+if __name__ == "__main__":
+    url = input("Enter the URL to scan")
+    spltAr = url.split("://www.");
+    i = (0,1)[len(spltAr)>1];
+    dm = spltAr[i].split("?")[0].split('/')[0].split(':')[0].lower();
+    n = dm.find(".com")
+    name = dm[:n]
+    gather_info(name,url)
 
 

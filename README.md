@@ -13,7 +13,7 @@ Requirements
 ============
 
 * Python 3.4+
-* Python Packages pythonwhois, tldextract
+* Python Packages pythonwhois
 * Works on Linux, Windows, Mac OSX, BSD
 * Only for Windows user you need to install nmap from the you can download 
 * it from here https://nmap.org/download.html
